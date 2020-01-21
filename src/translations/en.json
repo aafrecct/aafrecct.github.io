@@ -1,0 +1,19 @@
+{
+  "mainmenu":[
+    "About."
+    "Some projects."
+    "My resume."
+    "My github."
+    "More."
+  ],
+  "about":[
+    "I'm a spanish Computer Engineering student at UPM. I like to use an alias on the internet to protect my privacy although you could easily find my real name if you tried. "
+  ],
+  "someprojects":[
+    "Color-Picker.",
+    "Resistor Values."
+  ],
+  "more":[
+    "Web Las Jordanas"
+  ]
+}

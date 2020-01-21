@@ -1,0 +1,81 @@
+body{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #141414;
+  color: #E0E0E0;
+  font-family: 'Baskervville', serif;
+  padding: 0%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1vw 5vw 1vw auto 1vw;
+  grid-template-columns: 1vw 30% 1vw auto 1vw;
+  grid-template-areas: ". . . . ."
+                       ". name . . ."
+                       ". . . . ."
+                       ". menu . content ."
+                       ". . . . .";
+}
+
+#name{
+  /* position: absolute; */
+  grid-area: name;
+  transition-duration: 0.4s;
+  font-family: 'Libre Baskerville', serif;
+  justify-content: center;
+  font-size: 4.4vw;
+  font-weight: 700;
+  cursor: default;
+}
+
+.accent{
+  color: #6185CA;
+}
+.accent:hover{
+  color: #2A2A2A;
+}
+
+#mainmenu{
+  /* position: absolute; */
+  grid-area: menu;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mi{
+  padding: 0.6vw 0px 0.6vw 1.6vw;
+  font-size: 2.2vw;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+.mi:hover{
+  padding-left: 2.4vw;
+}
+.mi.current{
+  padding-left: 2vw !important;
+  color: #6185CA;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.content{
+  grid-area: content;
+  pointer-events: none;
+  transition-duration: 0.4s;
+  visibility: visible;
+  opacity: 0;
+}
+
+.active{
+  pointer-events: all;
+  visibility: visible;
+  opacity: 1;
+}
